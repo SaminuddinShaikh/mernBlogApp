@@ -1,0 +1,125 @@
+.single-post{
+    flex: 9;
+}
+
+.single-postWrapper{
+    padding: 20px 0 20px 20px;
+}
+
+.single-postImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.single-postTitle{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.single-postEdit{
+    float:  right;
+    font-size: 16px;
+}
+
+.single-postIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.single-postIcon:first-child{
+    color: rgb(7, 110, 110);
+}
+
+.single-postIcon:last-child{
+    color: rgb(252, 62, 62);
+}
+
+.single-postInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: peru;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.single-postDisc{
+    color: #444;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.single-postDisc::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.single-postTitleInput{
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    border: none;
+    border-bottom: #666 solid 1px;
+    color: #333;
+}
+
+.single-postTitleInput:focus{
+    outline: none;
+}
+
+.single-postDiscInput{
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    border: #666 solid 1px;
+    border-radius: 10px;
+}
+
+.single-postDiscInput:focus{
+    outline: none;
+}
+
+.update-label{
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+ .update-div{
+     width: 100%;
+  display: flex;
+  flex-direction: column;   
+ }
+
+ .post-updateBtn{
+     border: none;
+     border-radius: 10px;
+     background-color: teal;
+     color: white;
+     cursor: pointer;
+     width: 100px;
+     padding: 10px;
+     margin-bottom: 15px;
+     align-self: flex-end;
+ }
+ 
+ .post-updateBtn:disabled{
+    cursor: not-allowed;
+    background-color: gray;
+ }
+
+ .cancel-updateBtn{
+    border: none;
+    border-radius: 10px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+ }

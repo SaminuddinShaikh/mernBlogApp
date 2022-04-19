@@ -1,0 +1,62 @@
+.signUp{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../../../public/images/loginBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.signUp-title{
+    font-size: 50px;
+}
+
+.signUp-from{
+    width: 20vw;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp-from > label{
+    margin: 10px 0;
+    color: #444;
+}
+
+.signUp-fromInputs {
+    padding: 10px;
+    background: rgba(238, 199, 154, 0.705);
+    border: none;
+}
+
+.signUp-button{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(197, 135, 64);
+    border: none;
+    color : rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-btn{
+position: absolute;
+top:60px;
+right: 20px;
+background-color: rgb(231, 122, 103);
+cursor: pointer;
+border: none;
+padding: 10px;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+font-weight: 600;
+}
+
+.signUp-button:disabled{
+    cursor: not-allowed;
+    background-color: gray;
+}
