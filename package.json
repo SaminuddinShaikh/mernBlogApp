@@ -12,12 +12,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "server": "nodemon index.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"" 
+    "test": "echo \"Error no test specified\" &&exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
