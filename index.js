@@ -12,6 +12,12 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000
 const cors = require("cors");
 
+const corsOptions ={
+    origin:'https://sammernblog.herokuapp.com', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+
 app.use(cors());
 dotenv.config({path: "./.env"});
 app.use(express.json());     //to send json api in body from postman test
