@@ -18,7 +18,7 @@ const corsOptions ={
     optionSuccessStatus:200
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 dotenv.config({path: "./.env"});
 app.use(express.json());     //to send json api in body from postman test
 app.use("/images", express.static(path.join(__dirname,"/images")))
