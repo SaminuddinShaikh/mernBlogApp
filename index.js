@@ -12,11 +12,11 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000
 const cors = require("cors");
 
+app.use(cors());
 dotenv.config({path: "./.env"});
 app.use(express.json());     //to send json api in body from postman test
 app.use("/images", express.static(path.join(__dirname,"/images")))
 
-app.use(cors())
 
 // mongoose.connect(process.env.MONGO_URL).then(console.log("connected to mongo")).catch(err=>console.log(err));
 
