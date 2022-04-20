@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());     //to send json api in body from postman test
 app.use("/images", express.static(path.join(__dirname,"/images")))
 
-dotenv.config({path: "./.env"});
+dotenv.config();
 
 // mongoose.connect(process.env.MONGO_URL).then(console.log("connected to mongo")).catch(err=>console.log(err));
 
